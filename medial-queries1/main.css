@@ -1,3 +1,46 @@
+/* main.css */
+
 body {
-  background: blanchedalmond;
-}
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    outline: 2px solid red;
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+  }
+
+
+  .a, .b, .c {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .a {
+    background-color: #3498db;
+    min-height: 20vh;
+  }
+  
+  .b {
+    background-color: rgb(204, 46, 143);
+    min-height: 80vh;
+    flex-grow: 2;
+  }
+  
+  .c {
+    background-color: #2ecc71;
+    min-height: 40vh;
+    flex-grow: 3;
+  }
+  
+  @media (min-width: 600px) {
+    .b, .c {
+      width: 50%;
+    }
+  }
+  
